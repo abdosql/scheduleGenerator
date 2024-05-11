@@ -91,6 +91,5 @@ def schedule():
         return jsonify({'status': 'success', 'schedule': solution}), 200
     else:
         return jsonify({'status': 'failure', 'message': 'No feasible solution found.'}), 400
-
 if __name__ == '__main__':
     app.run(debug=True)
