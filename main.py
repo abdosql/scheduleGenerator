@@ -76,6 +76,10 @@ def create_and_solve_schedule(groups, teachers, classrooms, course_sessions):
     else:
         return None
 
+@app.route("/")
+def home_view():
+        return "<h1>Welcome to Geeks for Geeks</h1>"
+
 @app.route('/schedule', methods=['POST'])
 def schedule():
     # Extract data from the incoming JSON request
